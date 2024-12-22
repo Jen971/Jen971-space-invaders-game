@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+C:\Users\asus\eclipse-workspace\space_invaders\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

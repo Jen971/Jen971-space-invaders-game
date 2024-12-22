@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* Apply a background image to the entire body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('space-invaders-.png'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
+  overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+/* Center the container and apply background */
+.center-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background for readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px; /* Limit the width of each section */
+}
+
+/* Header styling */
+h1, h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Hide sections by default */
+.hidden {
+  display: none;
+}
+
+/* Player registration and info pages */
+#player-registration, #returning-player, #player-info-page {
+  width: 100%;
+  max-width: 500px; /* Limit the width of each section */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Styling for the input fields */
+input[type="text"] {
+  width: 100%;
+  max-width: 400px; /* Max width of the input field */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+button {
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 10px 20px;
+  width: auto;
+  margin-top: 10px;
+}
+
+/* Start Game Button */
+#start-game {
+  background-color: #14eb7c;
+  color: white;
+}
+
+#start-game:hover {
+  background-color: #118cd8;
+}
+
+/* Help Button */
+#help {
+  background-color: #20e7ee;
+  color: white;
+}
+
+#help:hover {
+  background-color: #5a6268;
+}
+
+/* Register Button */
+#register-player {
+  background-color: #28a745;
+  color: white;
+}
+
+#register-player:hover {
+  background-color: #218838;
+}
+
+/* Back Button (for Registration Page) */
+#back-to-main, #back-to-main2, #back-to-main3 {
+  background-color: #ffc107;
+  color: black;
+}
+
+#back-to-main:hover, #back-to-main2:hover, #back-to-main3:hover {
+  background-color: #e0a800;
+}
+
+/* Player Info Button */
+#player-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+#player-info:hover {
+  background-color: #138496;
+}
+
+/* Play Now Button */
+#play-now {
+  background-color: #28a745;
+  color: white;
+}
+
+#play-now:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+  .center-container {
+    width: 90%; /* Allow for more space on smaller devices */
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+}
+
+/* Animations for buttons and other elements */
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Background for the hidden divs */
+.hidden {
+  display: none;
+}
+
+/* Special styling for player info section */
+#player-info-page {
+  font-size: 18px;
+}
+
+#player-info-page p {
+  margin-bottom: 10px;
+}
+
+/* Add shadow effects and border for input fields */
+input[type="text"] {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
